@@ -1,0 +1,11 @@
+h1 Enter a dog name!
+
+form(method="POST" action="/dog")
+    input(name="dog", placeholder="Enter dog name" required)
+    input(name="age", placeholder="Please enter age" required)
+    button(type="submit")
+        |Add dog!
+
+ul 
+    each key in items
+        li=  `${key.dogname} ${key.age}`
